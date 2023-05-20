@@ -1,7 +1,6 @@
 #newShape {
     text-shadow: 200ch;
     text-align: center;
-    background: rgb(209,94,255);
     background: linear-gradient(-45deg, rgba(209,94,255,1) 14%, rgba(0,219,255,1) 100%);
     padding-top: 0.8%;
     padding-left: 1.6%;
