@@ -1,0 +1,29 @@
+#newShape {
+    text-shadow: 200ch;
+    text-align: center;
+    background: rgb(209,94,255);
+    background: linear-gradient(-45deg, rgba(209,94,255,1) 14%, rgba(0,219,255,1) 100%);
+    padding-top: 0.8%;
+    padding-left: 1.6%;
+    padding-bottom: 0.6%;
+}
+#paragraph1 {
+    font-size: 4.5vw;
+    font-weight: bold;
+    font-style: italic;
+}
+#paragraph2 {
+    font-size: 1.43vw;
+    font-style: italic;
+}
+.white-rectangle {
+    background-color: #ffffff;
+    outline: 0.2vw solid black;
+    height: 98%;
+    width: 100.5%;
+}
+.personal-image {
+    width: 73%;
+    position: relative;
+    right: 0%;
+}
