@@ -14,8 +14,7 @@ function updateImages() {
     leftImageName = 'Photo' + ((num_left_pic + 15) % 16) + '.jpg';
     mainImageName = 'Photo' + ((num_left_pic) % 16) + '.jpg';
     rightImageName = 'Photo' + ((num_left_pic + 1) % 16) + '.jpg';
-    //document.getElementById('left-photo').src = leftImageName;
-    document.getElementById('left-photo').innerHTML = `<img class="left-photo" src="${leftImageName}" alt="Sorry, Image Not Found">`;
-    document.getElementById('main-photo').innerHTML = `<img class="main-photo" src="${mainImageName}" alt="Sorry, Image Not Found">`;
-    document.getElementById('right-photo').innerHTML = `<img class="right-photo" src="${rightImageName}" alt="Sorry, Image Not Found">`;
+    document.getElementById('left-photo').src = leftImageName;
+    document.getElementById('main-photo').src = mainImageName;
+    document.getElementById('right-photo').src = rightImageName;
 }
