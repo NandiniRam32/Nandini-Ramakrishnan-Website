@@ -30,6 +30,20 @@
     width: 50vw;
     margin-left: 23.5vw;
 }
+#newShapePreviousNext {
+    text-shadow: 200ch;
+    text-align: center;
+    padding-top: 0.8vw;
+    height: 2.4vw;
+    width: 12vw;
+    margin-left: 13vw;
+    background: linear-gradient(90deg, rgba(209,94,255,1) 14%, rgba(0,219,255,1) 100%);
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 3vw;
+    color: white;
+    outline: 0.2vw solid white;
+    padding-bottom: 1vw;
+}
 #top-bar {
     color: #c261ff;
     background-color: black;
