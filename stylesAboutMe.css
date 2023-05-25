@@ -112,19 +112,19 @@
 }
 .main-photo {
     width: 36vw;
-    margin-top: 5vw;
+    margin-top: 2.6vw;
     margin-left: 2vw;
     outline: 0.4vw solid white;
 }
 .left-photo {
     width: 18vw;
-    margin-top: 14vw;
+    margin-top: 10vw;
     margin-left: 14vw;
     outline: 0.4vw solid white;
 }
 .right-photo {
     width: 18vw;
-    margin-top: 14vw;
+    margin-top: 10vw;
     margin-left: 2vw;
     outline: 0.4vw solid white;
 }
