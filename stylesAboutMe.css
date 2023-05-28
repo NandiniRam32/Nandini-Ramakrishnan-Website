@@ -119,7 +119,7 @@
 .left-photo {
     width: 18vw;
     margin-top: 10vw;
-    margin-left: 14vw;
+    margin-left: 12vw;
     outline: 0.4vw solid white;
 }
 .right-photo {
@@ -131,4 +131,9 @@
 .navbar-custom {
     background-color: black;
     color: #c261ff;
+    height: 3.5vw;
+    font-size: 1.18vw;
+    font-weight: bold;
+    width: 98vw;
+    margin-left: 0.5vw;
 }
