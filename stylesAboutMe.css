@@ -157,9 +157,6 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
 }
 
-
-
-/* Links inside the dropdown */
 .dropdown-content-about-me a, .dropdown-content-art-page a, .dropdown-content-photography-page a {
     padding: 12px 16px;
     text-decoration: none;
@@ -169,9 +166,8 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content-about-me a:hover {
-    background-color: #ddd;
+.dropdown-content-about-me a:hover, .dropdown-content-art-page a:hover, .dropdown-content-photography-page a:hover {
+    background-color: #93eef5;
 }
 
 .show {
