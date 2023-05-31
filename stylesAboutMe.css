@@ -146,6 +146,8 @@
 .navbarDropdownAboutMe:hover, .navbarDropdownAboutMe:focus, .navbarDropdown:hover, .navbarDropdown:focus, 
 .navbarDropdownArtPage:hover, .navbarDropdownArtPage:focus, .navbarDropdownPhotographyPage:hover, .navbarDropdownPhotographyPage:focus {
     color: #52c2eb;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
 }
 
 .dropdown-content-about-me, .dropdown-content-art-page, .dropdown-content-photography-page {
@@ -163,13 +165,21 @@
     display: block;
     color: #c261ff;
     font-size: 1vw;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .dropdown-content-about-me a:hover, .dropdown-content-art-page a:hover, .dropdown-content-photography-page a:hover {
     background-color: #93eef5;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
 }
 
 .show {
     display:block;
+}
+
+.bottomButton:hover {
+    width: 68%;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
 }
