@@ -138,3 +138,42 @@
     margin-left: 0.5vw;
     margin-top: 0.5vw;
 }
+
+.navbarDropdownAboutMe, .navbarDropdown, .navbarDropdownArtPage, .navbarDropdownPhotographyPage {
+    color: #c261ff;
+}
+
+.navbarDropdownAboutMe:hover, .navbarDropdownAboutMe:focus, .navbarDropdown:hover, .navbarDropdown:focus, 
+.navbarDropdownArtPage:hover, .navbarDropdownArtPage:focus, .navbarDropdownPhotographyPage:hover, .navbarDropdownPhotographyPage:focus {
+    color: #52c2eb;
+}
+
+.dropdown-content-about-me, .dropdown-content-art-page, .dropdown-content-photography-page {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    min-width: 8vw;
+    outline: 0.2vw solid black;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+}
+
+
+
+/* Links inside the dropdown */
+.dropdown-content-about-me a, .dropdown-content-art-page a, .dropdown-content-photography-page a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #c261ff;
+    font-size: 1vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content-about-me a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display:block;
+}
