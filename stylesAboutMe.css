@@ -140,8 +140,7 @@
 }
 
 /** for phones */
-@media (max-width: 480px) {
-    /** ... */
+@media (max-width: 500px) {
     .dropdown-content-about-me, .dropdown-content-art-page, .dropdown-content-photography-page {
         display: none;
         position: absolute;
@@ -172,7 +171,7 @@
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         transition: all 1s ease;
         -webkit-transition: all 1s ease;
-        line-height: 0.5vw;
+        line-height: 0.05vw;
     }
 }
 
@@ -180,7 +179,7 @@
 
 
 /** for desktop */
-@media (min-width: 481px) {
+@media (min-width: 501px) {
     .dropdown-content-about-me, .dropdown-content-art-page, .dropdown-content-photography-page {
         display: none;
         position: absolute;
