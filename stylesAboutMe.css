@@ -139,6 +139,30 @@
     margin-top: 0.5vw;
 }
 
+@media (max-width: 480px) {
+    /** ... */
+    .dropdown-content-about-me, .dropdown-content-art-page, .dropdown-content-photography-page {
+        display: none;
+        position: absolute;
+        background-color: whitesmoke;
+        min-width: 8vw;
+        max-height: 8vw;
+        outline: 0.2vw solid black;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    }
+}
+
+@media (min-width: 481px) {
+    .dropdown-content-about-me, .dropdown-content-art-page, .dropdown-content-photography-page {
+        display: none;
+        position: absolute;
+        background-color: whitesmoke;
+        min-width: 8vw;
+        outline: 0.2vw solid black;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    }
+}
+
 .navbarDropdownAboutMe, .navbarDropdown, .navbarDropdownArtPage, .navbarDropdownPhotographyPage {
     color: #c261ff;
     transition: all 1s ease;
@@ -150,15 +174,6 @@
     color: #52c2eb;
     transition: all .4s ease;
     -webkit-transition: all .4s ease;
-}
-
-.dropdown-content-about-me, .dropdown-content-art-page, .dropdown-content-photography-page {
-    display: none;
-    position: absolute;
-    background-color: whitesmoke;
-    min-width: 8vw;
-    outline: 0.2vw solid black;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
 }
 
 .dropdown-content-about-me a, .dropdown-content-art-page a, .dropdown-content-photography-page a {
