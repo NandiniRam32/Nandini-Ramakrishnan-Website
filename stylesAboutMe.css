@@ -183,3 +183,21 @@
     transition: all 1s ease;
     -webkit-transition: all 1s ease;
 }
+
+.stickyMainNavbar {
+    position: fixed;
+    top: 0;
+    opacity: 1;
+}
+
+.stickyNavbarSubsection {
+    position: relative;
+    align-items: center;
+    width: 100%;
+    padding-top: 3.5vw;
+}
+
+.stickyNavbarSubsectionGone {
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
