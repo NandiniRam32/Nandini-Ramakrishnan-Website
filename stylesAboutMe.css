@@ -141,6 +141,8 @@
 
 .navbarDropdownAboutMe, .navbarDropdown, .navbarDropdownArtPage, .navbarDropdownPhotographyPage {
     color: #c261ff;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
 }
 
 .navbarDropdownAboutMe:hover, .navbarDropdownAboutMe:focus, .navbarDropdown:hover, .navbarDropdown:focus, 
@@ -166,6 +168,8 @@
     color: #c261ff;
     font-size: 1vw;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
 }
 
 .dropdown-content-about-me a:hover, .dropdown-content-art-page a:hover, .dropdown-content-photography-page a:hover {
@@ -176,6 +180,11 @@
 
 .show {
     display:block;
+}
+
+.bottomButton {
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
 }
 
 .bottomButton:hover {
