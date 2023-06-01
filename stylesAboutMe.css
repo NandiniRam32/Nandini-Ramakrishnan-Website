@@ -173,7 +173,7 @@
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         transition: all 1s ease;
         -webkit-transition: all 1s ease;
-        max-height: 2vw;
+        line-height: 0.5vw;
     }
 }
 
