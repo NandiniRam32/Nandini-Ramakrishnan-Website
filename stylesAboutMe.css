@@ -153,7 +153,6 @@
         color: #c261ff;
         transition: all 1s ease;
         -webkit-transition: all 1s ease;
-        background-color: white;
     }
     
     .navbarDropdownAboutMe:hover, .navbarDropdownAboutMe:focus, .navbarDropdown:hover, .navbarDropdown:focus, 
@@ -172,7 +171,7 @@
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         transition: all 1s ease;
         -webkit-transition: all 1s ease;
-        line-height: 1vw;
+        line-height: 10vw;
     }
 }
 
