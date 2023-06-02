@@ -109,16 +109,6 @@
     margin-left: 2vw;
     outline: 0.4vw solid white;
 }
-.navbar-custom {
-    background-color: black;
-    color: #c261ff;
-    height: 3.5vw;
-    font-size: 1.2vw;
-    font-weight: bold;
-    width: 98vw;
-    margin-left: 0.5vw;
-    margin-top: 0.5vw;
-}
 
 /** for phones */
 @media (max-width: 800px) {
@@ -150,6 +140,16 @@
         font-family: 'Times New Roman', Times, serif;
         padding-bottom: 2vw;
     }
+    .navbar-custom {
+        background-color: black;
+        color: #c261ff;
+        height: 5.5vw;
+        font-size: 1.8vw;
+        font-weight: bold;
+        width: 98vw;
+        margin-left: 0.5vw;
+        margin-top: 0.5vw;
+    }
     .dropdown-content-about-me, .dropdown-content-art-page, .dropdown-content-photography-page {
         display: none;
         position: absolute;
@@ -177,7 +177,7 @@
         text-decoration: none;
         display: block;
         color: #c261ff;
-        font-size: 1vw;
+        font-size: 1.4vw;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         transition: all 1s ease;
         -webkit-transition: all 1s ease;
@@ -217,6 +217,16 @@
         font-family: 'Times New Roman', Times, serif;
         padding-bottom: 2vw;
     }
+    .navbar-custom {
+        background-color: black;
+        color: #c261ff;
+        height: 3.5vw;
+        font-size: 1.2vw;
+        font-weight: bold;
+        width: 98vw;
+        margin-left: 0.5vw;
+        margin-top: 0.5vw;
+    }
     .dropdown-content-about-me, .dropdown-content-art-page, .dropdown-content-photography-page {
         display: none;
         position: absolute;
@@ -247,7 +257,6 @@
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         transition: all 1s ease;
         -webkit-transition: all 1s ease;
-        background-color: pink;
     }
 }
 
