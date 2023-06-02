@@ -197,7 +197,7 @@
         width: 100.5%;
     }
     .personal-image {
-        width: 70%;
+        width: 81.25%;
         position: relative;
         right: 0%;
     }
@@ -208,12 +208,14 @@
         color: black;
         font-family: 'Times New Roman', Times, serif;
         line-height: 110%;
+        padding-top: 1vw;
     }
     #paragraph2 {
         font-size: 1.43vw;
         font-style: italic;
         color: black;
         font-family: 'Times New Roman', Times, serif;
+        padding-bottom: 2vw;
     }
     .dropdown-content-about-me, .dropdown-content-art-page, .dropdown-content-photography-page {
         display: none;
