@@ -153,6 +153,7 @@
         color: #c261ff;
         transition: all 1s ease;
         -webkit-transition: all 1s ease;
+        background-color: pink;
     }
     
     .navbarDropdownAboutMe:hover, .navbarDropdownAboutMe:focus, .navbarDropdown:hover, .navbarDropdown:focus, 
@@ -192,7 +193,6 @@
         color: #c261ff;
         transition: all 1s ease;
         -webkit-transition: all 1s ease;
-        background-color: white;
     }
     
     .navbarDropdownAboutMe:hover, .navbarDropdownAboutMe:focus, .navbarDropdown:hover, .navbarDropdown:focus, 
