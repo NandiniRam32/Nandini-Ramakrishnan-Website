@@ -63,20 +63,6 @@
     text-align: center;
     padding-bottom: 60%;
 }
-#paragraph1 {
-    font-size: 4.5vw;
-    font-weight: bold;
-    font-style: italic;
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    line-height: 110%;
-}
-#paragraph2 {
-    font-size: 1.43vw;
-    font-style: italic;
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-}
 #paragraph3 {
     font-size: 1.15vw;
     font-family: 'Times New Roman', Times, serif;
@@ -143,9 +129,26 @@
         width: 98%;
     }
     .personal-image {
-        width: 100%;
+        width: 91%;
         position: relative;
-        right: 0%;
+        right: 5%;
+    }
+    #paragraph1 {
+        font-size: 4.5vw;
+        font-weight: bold;
+        font-style: italic;
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+        line-height: 110%;
+        padding-top: 2vw;
+        padding-bottom: 1vw;
+    }
+    #paragraph2 {
+        font-size: 1.43vw;
+        font-style: italic;
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+        padding-bottom: 2vw;
     }
     .dropdown-content-about-me, .dropdown-content-art-page, .dropdown-content-photography-page {
         display: none;
@@ -194,9 +197,23 @@
         width: 100.5%;
     }
     .personal-image {
-        width: 73%;
+        width: 70%;
         position: relative;
         right: 0%;
+    }
+    #paragraph1 {
+        font-size: 4.5vw;
+        font-weight: bold;
+        font-style: italic;
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+        line-height: 110%;
+    }
+    #paragraph2 {
+        font-size: 1.43vw;
+        font-style: italic;
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
     }
     .dropdown-content-about-me, .dropdown-content-art-page, .dropdown-content-photography-page {
         display: none;
