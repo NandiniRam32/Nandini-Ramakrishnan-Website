@@ -163,7 +163,6 @@
     }
     
     .dropdown-content-about-me a, .dropdown-content-art-page a, .dropdown-content-photography-page a {
-        padding: 12px 16px;
         text-decoration: none;
         display: block;
         color: #c261ff;
@@ -172,7 +171,7 @@
         transition: all 1s ease;
         -webkit-transition: all 1s ease;
         line-height: 0.01vw;
-        background-color: purple;
+        background-color: blue;
     }
 }
 
