@@ -140,7 +140,7 @@
 }
 
 /** for phones */
-@media (max-width: 500px) {
+@media (max-width: 800px) {
     .dropdown-content-about-me, .dropdown-content-art-page, .dropdown-content-photography-page {
         display: none;
         position: absolute;
@@ -163,6 +163,7 @@
     }
     
     .dropdown-content-about-me a, .dropdown-content-art-page a, .dropdown-content-photography-page a {
+        text-align: center;
         text-decoration: none;
         display: block;
         color: #c261ff;
@@ -171,7 +172,6 @@
         transition: all 1s ease;
         -webkit-transition: all 1s ease;
         line-height: 5vw;
-        background-color: blue;
     }
 }
 
@@ -179,7 +179,7 @@
 
 
 /** for desktop */
-@media (min-width: 501px) {
+@media (min-width: 801px) {
     .dropdown-content-about-me, .dropdown-content-art-page, .dropdown-content-photography-page {
         display: none;
         position: absolute;
