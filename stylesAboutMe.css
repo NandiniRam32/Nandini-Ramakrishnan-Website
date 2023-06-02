@@ -369,6 +369,8 @@
     position: fixed;
     top: 0;
     opacity: 1;
+    transition: all 1000s ease;
+    -webkit-transition: all 1000s ease;
 }
 
 .stickyNavbarSubsection {
@@ -381,4 +383,10 @@
 .stickyNavbarSubsectionGone {
     transition: all 1s ease;
     -webkit-transition: all 1s ease;
+}
+
+.line {
+    border-bottom: 1px solid black;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
 }

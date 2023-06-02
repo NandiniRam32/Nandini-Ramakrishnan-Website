@@ -20,10 +20,16 @@ var sticky = navbar.offsetTop;
 
 function navbarStickyness() {
     navbar.classList.add("stickyMainNavbar");
-    if (window.pageYOffset <= sticky) {
+    if (window.pageYOffset < sticky) {
+        navbar.classList.remove("stickyMainNavbar");
+    }
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("stickyMainNavbar");
+    }
+    /**if (window.pageYOffset <= sticky) {
         navbarSubsection.classList.add("stickyNavbarSubsection");
     } else {
         navbarSubsection.classList.remove("stickyNavbarSubsection");
         navbarSubsection.classList.add("stickyNavbarSubsectionGone");
-    }
+    }*/
 }
