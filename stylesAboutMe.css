@@ -172,6 +172,7 @@
         transition: all 1s ease;
         -webkit-transition: all 1s ease;
         line-height: 0.1vw;
+        background-color: pink;
     }
 }
 
@@ -210,6 +211,7 @@
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         transition: all 1s ease;
         -webkit-transition: all 1s ease;
+        background-color: pink;
     }
 }
 
