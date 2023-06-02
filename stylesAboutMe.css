@@ -164,6 +164,7 @@
     
     .dropdown-content-about-me a, .dropdown-content-art-page a, .dropdown-content-photography-page a {
         padding-left: 1vw;
+        padding-right: 1vw;
         text-decoration: none;
         display: block;
         color: #c261ff;
