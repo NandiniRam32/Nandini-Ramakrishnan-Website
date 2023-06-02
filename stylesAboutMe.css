@@ -141,6 +141,12 @@
 
 /** for phones */
 @media (max-width: 800px) {
+    .white-rectangle {
+        background-color: #ffffff;
+        outline: 0.2vw solid black;
+        height: 98%;
+        width: 98%;
+    }
     .dropdown-content-about-me, .dropdown-content-art-page, .dropdown-content-photography-page {
         display: none;
         position: absolute;
@@ -181,6 +187,12 @@
 
 /** for desktop */
 @media (min-width: 801px) {
+    .white-rectangle {
+        background-color: #ffffff;
+        outline: 0.2vw solid black;
+        height: 98%;
+        width: 100.5%;
+    }
     .dropdown-content-about-me, .dropdown-content-art-page, .dropdown-content-photography-page {
         display: none;
         position: absolute;
