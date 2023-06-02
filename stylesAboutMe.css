@@ -21,7 +21,7 @@
     padding-left: 2%;
     padding-bottom: 1.5%;
 }
-#newShapePreviousNext {
+#newShapeNext {
     text-shadow: 200ch;
     text-align: center;
     padding-top: 0.8vw;
@@ -78,12 +78,6 @@
     width: 36vw;
     margin-top: 2.6vw;
     margin-left: 1vw;
-    outline: 0.4vw solid white;
-}
-.left-photo {
-    width: 18vw;
-    margin-top: 10vw;
-    margin-left: 12vw;
     outline: 0.4vw solid white;
 }
 .right-photo {
@@ -155,6 +149,26 @@
         height: 4.5vw;
         width: 50vw;
         margin-left: 23.5vw;
+    }
+    .left-photo {
+        width: 18vw;
+        margin-top: 10vw;
+        margin-left: 10.5vw;
+        outline: 0.4vw solid white;
+    }
+    #newShapePrevious {
+        text-shadow: 200ch;
+        text-align: center;
+        padding-top: 0.8vw;
+        height: 2.4vw;
+        width: 12vw;
+        font-family: Brush Script MT, Brush Script Std, cursive;
+        font-size: 3vw;
+        color: white;
+        outline: 0.2vw solid white;
+        padding-bottom: 1vw;
+        margin-left: 16vw;
+        background: linear-gradient(-90deg, rgba(209,94,255,1) 14%, rgba(0,219,255,1) 100%);
     }
     .navbar-custom {
         background-color: black;
@@ -266,6 +280,26 @@
         height: 4vw;
         width: 50vw;
         margin-left: 23.5vw;
+    }
+    .left-photo {
+        width: 18vw;
+        margin-top: 10vw;
+        margin-left: 12vw;
+        outline: 0.4vw solid white;
+    }
+    #newShapePrevious {
+        text-shadow: 200ch;
+        text-align: center;
+        padding-top: 0.8vw;
+        height: 2.4vw;
+        width: 12vw;
+        font-family: Brush Script MT, Brush Script Std, cursive;
+        font-size: 3vw;
+        color: white;
+        outline: 0.2vw solid white;
+        padding-bottom: 1vw;
+        margin-left: 17vw;
+        background: linear-gradient(-90deg, rgba(209,94,255,1) 14%, rgba(0,219,255,1) 100%);
     }
     .navbar-custom {
         background-color: black;
