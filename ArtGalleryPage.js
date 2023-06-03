@@ -14,7 +14,22 @@ function updateImages() {
     leftImageName = 'Drawing' + ((num_left_pic + 7) % 8) + '.jpg';
     mainImageName = 'Drawing' + ((num_left_pic) % 8) + '.jpg';
     rightImageName = 'Drawing' + ((num_left_pic + 1) % 8) + '.jpg';
-    document.getElementById('left-photo').src = leftImageName;
-    document.getElementById('main-photo').src = mainImageName;
-    document.getElementById('right-photo').src = rightImageName;
+
+    const leftPhoto = document.getElementById('left-photo');
+    const mainPhoto = document.getElementById('main-photo');
+    const rightPhoto = document.getElementById('right-photo');
+
+    leftPhoto.addEventListener('load', () => {
+        leftPhoto.src = leftImageName;
+    });
+    mainPhoto.addEventListener('load', () => {
+        mainPhoto.src = mainImageName;
+    });
+    rightPhoto.addEventListener('load', () => {
+        rightPhoto.src = rightImageName;
+    });
+
+    leftPhoto.src = leftImageName;
+    mainPhoto.src = mainImageName;
+    rightPhoto.src = rightImageName;
 }
