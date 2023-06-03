@@ -252,6 +252,10 @@
     .bottomLinksFont {
         font-size: 2vw;
     }
+    .laptop-display {
+        width: 0em;
+        height: 0em;
+    }
 }
 
 
@@ -420,6 +424,10 @@
     }
     .bottomLinksFont {
         font-size: 1.3vw;
+    }
+    .mobile-display {
+        width: 0em;
+        height: 0em;
     }
 }
 
