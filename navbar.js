@@ -1,13 +1,19 @@
 function toggleAboutMe() {
     document.getElementById("myDropdownAboutMe").classList.toggle("show");
+    document.getElementById("myDropdownArtPage").classList.remove("show");
+    document.getElementById("myDropdownPhotographyPage").classList.remove("show");
 }
 
 function toggleArtPage() {
     document.getElementById("myDropdownArtPage").classList.toggle("show");
+    document.getElementById("myDropdownAboutMe").classList.remove("show");
+    document.getElementById("myDropdownPhotographyPage").classList.remove("show");
 }
 
 function togglePhotographyPage() {
     document.getElementById("myDropdownPhotographyPage").classList.toggle("show");
+    document.getElementById("myDropdownAboutMe").classList.remove("show");
+    document.getElementById("myDropdownArtPage").classList.remove("show");
 }
 
 window.onscroll = function() {
