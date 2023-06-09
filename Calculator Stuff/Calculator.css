@@ -2,8 +2,8 @@
     border-radius: 1em;
     /*background: linear-gradient(45deg, rgba(0,0,0,1) 30%, rgba(255,232,191,1) 100%);*/
     background: #181818;
-    margin-left: 32em;
-    margin-top: 0.8em;
+    margin-left: 33vw;
+    margin-top: 4em;
     margin-bottom: 0em;
     width: 32em;
     height: 42em;
@@ -42,7 +42,7 @@
     margin-left: 0.23em;
     margin-top: 0.2em;
     width: 5.54em;
-    height: 31.4vw;
+    height: 6em;
     font-size: 5em;
     outline: 0.0001vw solid white;
 }
@@ -53,7 +53,7 @@
     padding-top: 0.2em;
     padding-left: 0.3em;
 }
-#calculator-buttons {
+.calculator-buttons {
     border-radius: 0.1em;
     background: linear-gradient(0deg, rgba(50,50,50,1) 60%, rgba(50,50,50,1) 61%, rgba(100,100,100,1) 20%);
     background-position: left top;
