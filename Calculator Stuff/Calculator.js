@@ -19,20 +19,47 @@ var button0 = document.getElementById("0");
 var equals = document.getElementById("=");
 var power = document.getElementById("^");
 var current = document.getElementById("calculator-top-box");
+var length = 0;
+var frontSign = 0;
+var text = 0;
 
 function buttonPressed(a) {
     if (current.innerText == "0") {
         current.innerText = a;
+        length = 1;
+        text = current.innerText;
+    } else if (length == 8) {
+        return;
     } else {
         current.innerText = "" + current.innerText + a;
+        length++;
+        if (frontSign == 0) {
+            text = current.innerText;
+        } else {
+            text = (current.innerText).substring(1);
+        }
     }
 }
 
 function buttonPressedSign(a) {
-    if (current.innerText == "0") {
-        current.innerText = a;
+    if (length == 8) {
+        return;
+    } else if (text.includes("+") || text.includes("−") || text.includes("×") || text.includes("÷")) {
+        return;
     } else {
-        current.innerText = "" + current.innerText + a;
+        current.innerText = current.innerText + a;
+        length++;
+        text = current.innerText;
+    }
+}
+
+function buttonPressedPlusMinus() {
+    if (frontSign == 0 || frontSign == "+") {
+        current.innerText = "−" + text;
+        frontSign = "-";
+    } else if (frontSign == "-") {
+        current.innerText = "+" + text;
+        frontSign = "+";
     }
 }
 
@@ -98,7 +125,7 @@ button3.addEventListener('click', () => {
 })
 
 plusMinus.addEventListener('click', () => {
-    //ADD A SPECIAL ONE HERE
+    buttonPressedPlusMinus();
 })
 
 decimal.addEventListener('click', () => {

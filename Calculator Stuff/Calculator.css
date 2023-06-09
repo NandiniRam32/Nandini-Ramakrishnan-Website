@@ -1,68 +1,138 @@
-#calculator-background {
-    border-radius: 1em;
-    /*background: linear-gradient(45deg, rgba(0,0,0,1) 30%, rgba(255,232,191,1) 100%);*/
-    background: #181818;
-    margin-left: 33vw;
-    margin-top: 2.4em;
-    margin-bottom: 0em;
-    width: 32em;
-    height: 42em;
-    outline: 0.2vw solid white;
+/** for desktop */
+@media (min-width: 801px) {
+    #calculator-background {
+        border-radius: 1em;
+        /*background: linear-gradient(45deg, rgba(0,0,0,1) 30%, rgba(255,232,191,1) 100%);*/
+        background: #181818;
+        margin-left: 33vw;
+        margin-top: 2.4em;
+        margin-bottom: 0em;
+        width: 32em;
+        height: 42em;
+        outline: 0.2vw solid white;
+    }
+    #calculator-inside-box {
+        border-radius: 1em;
+        /*background: linear-gradient(-45deg, rgba(0,0,0,1) 45%, rgba(0,0,0,1) 42%, rgba(255,232,191,1) 100%);*/
+        /*background: linear-gradient(to top, rgba(0,0,0,1) 30%, rgba(255,232,191,1) 100%);*/
+        margin-left: 1em;
+        padding-top: 0.4em;
+        width: 30em;
+        height: 38em;
+        /*outline: 0.1vw solid white;*/
+    }
+    #calculator-top-box {
+        /*border-radius: 0.2em;*/
+        border-radius: 0.08em;
+        /*background: linear-gradient(0deg, rgba(0,0,0,1) 30%, rgba(65,65,65,1) 100%);*/
+        background: linear-gradient(0deg, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 50%, rgba(20,20,20,1) 51%, rgba(65,65,65,1) 100%);
+        margin-left: 0.23em;
+        margin-top: 0em;
+        padding-right: 0.22em;
+        padding-top: 0.2em;
+        width: 5.34em;
+        height: 7vw;
+        text-align: right;
+        font-size: 5em;
+        color: white;
+        outline: 0.001vw solid white;
+    }
+    #calculator-gray-buttons-box {
+        /*border-radius: 0.2em;*/
+        border-radius: 0.08em;
+        background-color: rgba(50,50,50,1);
+        margin-left: 0.23em;
+        margin-top: 0.2em;
+        width: 5.54em;
+        height: 6em;
+        font-size: 5em;
+        outline: 0.0001vw solid white;
+    }
+    #calculator-buttons-holder { 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 0.1em;
+        padding-top: 0.2em;
+        padding-left: 0.3em;
+    }
+    .calculator-buttons {
+        border-radius: 0.1em;
+        background: linear-gradient(0deg, rgba(50,50,50,1) 60%, rgba(50,50,50,1) 61%, rgba(100,100,100,1) 20%);
+        background-position: left top;
+        background-repeat: repeat;
+        width: 1.2em;
+        height: 1.2em;
+        font-size: 0.8em;
+        color: whitesmoke;
+        text-align: center;
+        box-shadow: inset 0 0 1em rgba(0, 0, 0, 0.8);
+        outline: 0.001em solid whitesmoke;
+    }
 }
-#calculator-inside-box {
-    border-radius: 1em;
-    /*background: linear-gradient(-45deg, rgba(0,0,0,1) 45%, rgba(0,0,0,1) 42%, rgba(255,232,191,1) 100%);*/
-    /*background: linear-gradient(to top, rgba(0,0,0,1) 30%, rgba(255,232,191,1) 100%);*/
-    margin-left: 1em;
-    padding-top: 0.4em;
-    width: 30em;
-    height: 38em;
-    /*outline: 0.1vw solid white;*/
-}
-#calculator-top-box {
-    /*border-radius: 0.2em;*/
-    border-radius: 0.08em;
-    /*background: linear-gradient(0deg, rgba(0,0,0,1) 30%, rgba(65,65,65,1) 100%);*/
-    background: linear-gradient(0deg, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 50%, rgba(20,20,20,1) 51%, rgba(65,65,65,1) 100%);
-    margin-left: 0.23em;
-    margin-top: 0em;
-    padding-right: 0.22em;
-    padding-top: 0.2em;
-    width: 5.34em;
-    height: 7vw;
-    text-align: right;
-    font-size: 5em;
-    color: white;
-    outline: 0.001vw solid white;
-}
-#calculator-gray-buttons-box {
-    /*border-radius: 0.2em;*/
-    border-radius: 0.08em;
-    background-color: rgba(50,50,50,1);
-    margin-left: 0.23em;
-    margin-top: 0.2em;
-    width: 5.54em;
-    height: 6em;
-    font-size: 5em;
-    outline: 0.0001vw solid white;
-}
-#calculator-buttons-holder { 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 0.1em;
-    padding-top: 0.2em;
-    padding-left: 0.3em;
-}
-.calculator-buttons {
-    border-radius: 0.1em;
-    background: linear-gradient(0deg, rgba(50,50,50,1) 60%, rgba(50,50,50,1) 61%, rgba(100,100,100,1) 20%);
-    background-position: left top;
-    background-repeat: repeat;
-    width: 1.2em;
-    height: 1.2em;
-    font-size: 0.8em;
-    color: whitesmoke;
-    text-align: center;
-    box-shadow: inset 0 0 1em rgba(0, 0, 0, 0.8);
-    outline: 0.001em solid whitesmoke;
+
+/** for mobile */
+@media (max-width: 800px) {
+    #calculator-background {
+        border-radius: 1em;
+        /*background: linear-gradient(45deg, rgba(0,0,0,1) 30%, rgba(255,232,191,1) 100%);*/
+        background: #181818;
+        width: 96vw;
+        height: 98vh;
+        outline: 0.2vw solid white;
+    }
+    #calculator-inside-box {
+        border-radius: 1em;
+        /*background: linear-gradient(-45deg, rgba(0,0,0,1) 45%, rgba(0,0,0,1) 42%, rgba(255,232,191,1) 100%);*/
+        /*background: linear-gradient(to top, rgba(0,0,0,1) 30%, rgba(255,232,191,1) 100%);*/
+        margin-left: 1em;
+        width: 22em;
+        height: 38em;
+        /*outline: 0.1vw solid white;*/
+    }
+    #calculator-top-box {
+        /*border-radius: 0.2em;*/
+        border-radius: 0.08em;
+        /*background: linear-gradient(0deg, rgba(0,0,0,1) 30%, rgba(65,65,65,1) 100%);*/
+        background: linear-gradient(0deg, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 50%, rgba(20,20,20,1) 51%, rgba(65,65,65,1) 100%);
+        padding-right: 0.1em;
+        width: 5.4em;
+        height: 1.1em;
+        text-align: right;
+        font-size: 4em;
+        color: white;
+        outline: 0.001vw solid white;
+    }
+    #calculator-gray-buttons-box {
+        /*border-radius: 0.2em;*/
+        border-radius: 0.08em;
+        background-color: rgba(50,50,50,1);
+        margin-top: 0.2em;
+        width: 4.4em;
+        height: 6.3em;
+        font-size: 5em;
+        outline: 0.0001vw solid white;
+    }
+    #calculator-buttons-holder { 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding-top: 0.25em;
+        padding-left: 0.15em;
+    }
+    .calculator-buttons {
+        border-radius: 0.1em;
+        background: linear-gradient(0deg, rgba(50,50,50,1) 60%, rgba(50,50,50,1) 61%, rgba(100,100,100,1) 20%);
+        background-position: left top;
+        background-repeat: repeat;
+        width: 1.2em;
+        height: 1.2em;
+        font-size: 0.75em;
+        color: whitesmoke;
+        text-align: center;
+        box-shadow: inset 0 0 1em rgba(0, 0, 0, 0.8);
+        outline: 0.001em solid whitesmoke;
+    }
+    .mobile-space {
+        background-color: rgba(50,50,50,1);
+        margin-top: 1.5vw;
+    }
 }
