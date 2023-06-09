@@ -46,6 +46,8 @@ function buttonPressedSign(a) {
         return;
     } else if (text.includes("+") || text.includes("−") || text.includes("×") || text.includes("÷")) {
         return;
+    } else if (length == 0) {
+        return;
     } else {
         current.innerText = current.innerText + a;
         length++;
@@ -53,20 +55,10 @@ function buttonPressedSign(a) {
     }
 }
 
-function buttonPressedPlusMinus() {
-    if (frontSign == 0 || frontSign == "+") {
-        current.innerText = "−" + text;
-        frontSign = "-";
-    } else if (frontSign == "-") {
-        current.innerText = "+" + text;
-        frontSign = "+";
-    }
-}
-
 plus.addEventListener('click', () => {
     buttonPressedSign("+");
     //current.innerText = current.innerText + "+";
-})  
+})
 
 minus.addEventListener('click', () => {
     buttonPressedSign("−");
@@ -93,7 +85,14 @@ button9.addEventListener('click', () => {
 })
 
 backspace.addEventListener('click', () => {
-    //SPECIAL ONE
+    text = text.substring(0, length);
+    current.innerText = current.innerText.substring(0, length);
+    length--;
+    if (length <= 0) {
+        length = 0;
+        current.innerText = 0;
+        text = 0;
+    }
 })
 
 button4.addEventListener('click', () => {
@@ -109,7 +108,9 @@ button6.addEventListener('click', () => {
 })
 
 clear.addEventListener('click', () => {
-    //ADD A SPECIAL ONE HERE
+    length = 0;
+    text = "";
+    current.innerText = "0";
 })
 
 button1.addEventListener('click', () => {
@@ -125,7 +126,13 @@ button3.addEventListener('click', () => {
 })
 
 plusMinus.addEventListener('click', () => {
-    buttonPressedPlusMinus();
+    if (frontSign == 0 || frontSign == "+") {
+        current.innerText = "−" + text;
+        frontSign = "-";
+    } else if (frontSign == "-") {
+        current.innerText = "+" + text;
+        frontSign = "+";
+    }
 })
 
 decimal.addEventListener('click', () => {
