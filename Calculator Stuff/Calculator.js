@@ -22,13 +22,16 @@ var current = document.getElementById("calculator-top-box");
 var length = 0;
 var frontSign = 0;
 var text = 0;
+var decimalUsed = 0;
 
 function buttonPressed(a) {
     if (current.innerText == "0") {
         current.innerText = a;
         length = 1;
         text = current.innerText;
-    } else if (length == 8) {
+    } else if (length == 9) {
+        return;
+    } else if (decimalUsed == 1 && a == ".") {
         return;
     } else {
         current.innerText = "" + current.innerText + a;
@@ -38,13 +41,21 @@ function buttonPressed(a) {
         } else {
             text = (current.innerText).substring(1);
         }
+        if (a == ".") {
+            decimalUsed = 1;
+        }
     }
 }
 
 function buttonPressedSign(a) {
-    if (length == 8) {
+    if (length == 9) {
         return;
-    } else if (text.includes("+") || text.includes("−") || text.includes("×") || text.includes("÷")) {
+    } else if ((a == "+" || a == "−") && (text.includes("×") || text.includes("÷"))) {
+        current.innerText = current.innerText + a;
+        length++;
+        text = current.innerText;
+        decimalUsed = 0;
+    } else if (text.includes("+") || text.includes("−") || text.includes("×") || text.includes("÷") || text.includes("^")) {
         return;
     } else if (length == 0) {
         return;
@@ -52,6 +63,7 @@ function buttonPressedSign(a) {
         current.innerText = current.innerText + a;
         length++;
         text = current.innerText;
+        decimalUsed = 0;
     }
 }
 
@@ -148,5 +160,5 @@ equals.addEventListener('click', () => {
 })
 
 power.addEventListener('click', () => {
-    buttonPressed("^");
+    buttonPressedSign("^");
 })
