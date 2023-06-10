@@ -23,6 +23,8 @@ var length = 0;
 var frontSign = 0;
 var text = 0;
 var decimalUsed = 0;
+let num1, num2, sign;
+var signUsed = 0;
 
 function buttonPressed(a) {
     if (current.innerText == "0") {
@@ -33,6 +35,9 @@ function buttonPressed(a) {
         return;
     } else if (decimalUsed == 1 && a == ".") {
         return;
+    } else if (current.innerText == "+" || current.innerText == "−" || current.innerText == "×" || current.innerText == "÷" || current.innerText == "^") {
+        length = 1;
+        current.innerText = "" + a;
     } else {
         current.innerText = "" + current.innerText + a;
         length++;
@@ -50,20 +55,20 @@ function buttonPressed(a) {
 function buttonPressedSign(a) {
     if (length == 9) {
         return;
-    } else if ((a == "+" || a == "−") && (text.includes("×") || text.includes("÷"))) {
-        current.innerText = current.innerText + a;
-        length++;
-        text = current.innerText;
-        decimalUsed = 0;
     } else if (text.includes("+") || text.includes("−") || text.includes("×") || text.includes("÷") || text.includes("^")) {
         return;
     } else if (length == 0) {
         return;
+    } else if (signUsed == 1) {
+        return;
     } else {
-        current.innerText = current.innerText + a;
-        length++;
-        text = current.innerText;
+        num1 = current.innerText;
+        sign = a;
+        current.innerText = a;
+        length = 0;
+        text = 0;
         decimalUsed = 0;
+        signUsed = 1;
     }
 }
 
@@ -97,6 +102,11 @@ button9.addEventListener('click', () => {
 })
 
 backspace.addEventListener('click', () => {
+    if (current.innerText == "+" || current.innerText == "−" || current.innerText == "×" || current.innerText == "÷" || current.innerText == "^") {
+        current.innerText = num1;
+        length = num1.length;
+        signUsed = 0;
+    }
     text = text.substring(0, length);
     current.innerText = current.innerText.substring(0, length);
     length--;
@@ -157,6 +167,11 @@ button0.addEventListener('click', () => {
 
 equals.addEventListener('click', () => {
     //SPECIAL ONE
+    num2 = current.innerText;
+    //Add stuff here
+    num1 = 0;
+    num2 = 0;
+    signUsed = 0;
 })
 
 power.addEventListener('click', () => {
