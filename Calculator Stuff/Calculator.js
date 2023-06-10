@@ -53,9 +53,7 @@ function buttonPressed(a) {
 }
 
 function buttonPressedSign(a) {
-    if (length == 9) {
-        return;
-    } else if (text.includes("+") || text.includes("−") || text.includes("×") || text.includes("÷") || text.includes("^")) {
+    if (text.includes("+") || text.includes("−") || text.includes("×") || text.includes("÷") || text.includes("^")) {
         return;
     } else if (length == 0) {
         return;
@@ -105,15 +103,15 @@ backspace.addEventListener('click', () => {
         current.innerText = num1;
         length = num1.length;
         signUsed = 0;
-        return;
-    }
-    text = text.substring(0, length - 1);
-    current.innerText = current.innerText.substring(0, length - 1);
-    length--;
-    if (length <= 0) {
-        length = 0;
-        current.innerText = 0;
-        text = 0;
+    } else {
+        text = text.substring(0, length - 1);
+        current.innerText = current.innerText.substring(0, length - 1);
+        length--;
+        if (length <= 0) {
+            length = 0;
+            current.innerText = 0;
+            text = 0;
+        }
     }
 })
 
@@ -150,7 +148,7 @@ button3.addEventListener('click', () => {
 
 plusMinus.addEventListener('click', () => {
     if (frontSign == 0 || frontSign == "+") {
-        current.innerText = "−" + text;
+        current.innerText = "-" + text;
         frontSign = "-";
     } else if (frontSign == "-") {
         current.innerText = "+" + text;
@@ -167,11 +165,10 @@ button0.addEventListener('click', () => {
 })
 
 equals.addEventListener('click', () => {
-    //SPECIAL ONE
     num2 = current.innerText;
     num1 = parseFloat(num1);
     num2 = parseFloat(num2);
-    //current.innerText = signUsed;
+    //current.innerText = parseFloat(-1);
     if (signUsed == "+") {
         current.innerText = num1 + num2;
     } else if (signUsed == "−") {
@@ -187,8 +184,10 @@ equals.addEventListener('click', () => {
     num1 = 0;
     num2 = 0;
     signUsed = 0;
+    if (current.innerText.length > 9) {
+        current.innerText = current.innerText.toExponential();
+    }
     //Problems to fix: signs and backspace
-    //-frontSign
 })
 
 power.addEventListener('click', () => {
