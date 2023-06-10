@@ -59,16 +59,15 @@ function buttonPressedSign(a) {
         return;
     } else if (length == 0) {
         return;
-    } else if (signUsed == 1) {
+    } else if (signUsed != 0) {
         return;
     } else {
         num1 = current.innerText;
-        sign = a;
         current.innerText = a;
         length = 0;
         text = 0;
         decimalUsed = 0;
-        signUsed = 1;
+        signUsed = a;
     }
 }
 
@@ -106,9 +105,10 @@ backspace.addEventListener('click', () => {
         current.innerText = num1;
         length = num1.length;
         signUsed = 0;
+        return;
     }
-    text = text.substring(0, length);
-    current.innerText = current.innerText.substring(0, length);
+    text = text.substring(0, length - 1);
+    current.innerText = current.innerText.substring(0, length - 1);
     length--;
     if (length <= 0) {
         length = 0;
@@ -133,6 +133,7 @@ clear.addEventListener('click', () => {
     length = 0;
     text = "";
     current.innerText = "0";
+    signUsed = 0;
 })
 
 button1.addEventListener('click', () => {
@@ -168,10 +169,26 @@ button0.addEventListener('click', () => {
 equals.addEventListener('click', () => {
     //SPECIAL ONE
     num2 = current.innerText;
+    num1 = parseFloat(num1);
+    num2 = parseFloat(num2);
+    //current.innerText = signUsed;
+    if (signUsed == "+") {
+        current.innerText = num1 + num2;
+    } else if (signUsed == "−") {
+        current.innerText = num1 - num2;
+    } else if (signUsed == "×") {
+        current.innerText = num1 * num2;
+    } else if (signUsed == "÷") {
+        current.innerText = num1 / num2;
+    } else if (signUsed == "^") {
+        current.innerText = num1 ** num2;
+    }
     //Add stuff here
     num1 = 0;
     num2 = 0;
     signUsed = 0;
+    //Problems to fix: signs and backspace
+    //-frontSign
 })
 
 power.addEventListener('click', () => {
