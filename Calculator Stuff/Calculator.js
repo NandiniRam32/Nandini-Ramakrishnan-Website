@@ -187,6 +187,13 @@ equals.addEventListener('click', () => {
     if (current.innerText.length > 9) {
         current.innerText = current.innerText.toExponential();
     }
+    length = current.innerText.length;
+    if (current.innerText.includes(".")) {
+        decimalUsed = 1;
+    } else {
+        decimalUsed = 0;
+    }
+    text = current.innerText;
     //Problems to fix: signs and backspace
 })
 
