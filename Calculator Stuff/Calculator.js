@@ -132,6 +132,7 @@ clear.addEventListener('click', () => {
     text = "";
     current.innerText = "0";
     signUsed = 0;
+    decimalUsed = 0;
 })
 
 button1.addEventListener('click', () => {
@@ -148,10 +149,10 @@ button3.addEventListener('click', () => {
 
 plusMinus.addEventListener('click', () => {
     if (frontSign == 0 || frontSign == "+") {
-        current.innerText = "-" + text;
+        current.innerText = "-" + current.innerText;
         frontSign = "-";
     } else if (frontSign == "-") {
-        current.innerText = "+" + text;
+        current.innerText = "+" + current.innerText;
         frontSign = "+";
     }
 })
@@ -184,8 +185,11 @@ equals.addEventListener('click', () => {
     num1 = 0;
     num2 = 0;
     signUsed = 0;
-    if (current.innerText.length > 9) {
-        current.innerText = current.innerText.toExponential();
+    length = current.innerText.length;
+    var answer = parseFloat(current.innerText);
+    if (length > 9) {
+        current.innerText = answer.toExponential(2);
+        //current.innerText = parseFloat(exponentialForm).toFixed(2);
     }
     length = current.innerText.length;
     if (current.innerText.includes(".")) {
