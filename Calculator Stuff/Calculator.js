@@ -66,6 +66,7 @@ function buttonPressedSign(a) {
         text = 0;
         decimalUsed = 0;
         signUsed = a;
+        frontSign = 0;
     }
 }
 
@@ -149,10 +150,10 @@ button3.addEventListener('click', () => {
 
 plusMinus.addEventListener('click', () => {
     if (frontSign == 0 || frontSign == "+") {
-        current.innerText = "-" + current.innerText;
+        current.innerText = "-" + text;
         frontSign = "-";
     } else if (frontSign == "-") {
-        current.innerText = "+" + current.innerText;
+        current.innerText = "+" + text;
         frontSign = "+";
     }
 })
