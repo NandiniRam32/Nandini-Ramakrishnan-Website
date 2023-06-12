@@ -149,10 +149,16 @@ button3.addEventListener('click', () => {
 })
 
 plusMinus.addEventListener('click', () => {
-    if (frontSign == 0 || frontSign == "+") {
+    if (frontSign == 0) {
+        text = current.innerText;
+        current.innerText = "-" + text;
+        frontSign = "-";
+    } else if (frontSign == "+") {
+        text = current.innerText.substring(1);
         current.innerText = "-" + text;
         frontSign = "-";
     } else if (frontSign == "-") {
+        text = current.innerText.substring(1);
         current.innerText = "+" + text;
         frontSign = "+";
     }
