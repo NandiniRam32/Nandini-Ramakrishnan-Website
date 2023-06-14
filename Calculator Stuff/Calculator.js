@@ -194,7 +194,7 @@ equals.addEventListener('click', () => {
     signUsed = 0;
     length = current.innerText.length;
     var answer = parseFloat(current.innerText);
-    if (length > 9) {
+    if (length > 10) {
         current.innerText = answer.toExponential(2);
         //current.innerText = parseFloat(exponentialForm).toFixed(2);
     }
