@@ -149,11 +149,7 @@ button3.addEventListener('click', () => {
 })
 
 plusMinus.addEventListener('click', () => {
-    if (frontSign == 0) {
-        text = current.innerText;
-        current.innerText = "-" + text;
-        frontSign = "-";
-    } else if (frontSign == "+") {
+    if (frontSign == "+") {
         text = current.innerText.substring(1);
         current.innerText = "-" + text;
         frontSign = "-";
@@ -161,6 +157,18 @@ plusMinus.addEventListener('click', () => {
         text = current.innerText.substring(1);
         current.innerText = "+" + text;
         frontSign = "+";
+    } else if ((current.innerText.includes("-") || current.innerText.includes("−"))) {
+        text = current.innerText.substring(1);
+        current.innerText = "+" + text;
+        frontSign = "+";
+    } else if (current.innerText.includes("+")) {
+        text = current.innerText.substring(1);
+        current.innerText = "-" + text;
+        frontSign = "-";
+    } else if (frontSign == 0) {
+        text = current.innerText;
+        current.innerText = "-" + text;
+        frontSign = "-";
     }
 })
 
@@ -205,6 +213,13 @@ equals.addEventListener('click', () => {
         decimalUsed = 0;
     }
     text = current.innerText;
+    if ((current.innerText.includes("-") || current.innerText.includes("−"))) {
+        text = current.innerText.substring(1);
+        frontSign = "-";
+    } else if (current.innerText.includes("+")) {
+        text = current.innerText.substring(1);
+        frontSign = "+";
+    }
     //Problems to fix: signs and backspace
 })
 
