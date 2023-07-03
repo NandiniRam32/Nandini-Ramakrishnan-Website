@@ -11,9 +11,9 @@ generateNext.addEventListener('click', () => {
     updateImages();
 })
 function updateImages() {
-    leftImageName = 'Drawing' + ((num_left_pic + 7) % 8) + '.jpg';
-    mainImageName = 'Drawing' + ((num_left_pic) % 8) + '.jpg';
-    rightImageName = 'Drawing' + ((num_left_pic + 1) % 8) + '.jpg';
+    leftImageName = 'Drawings/Drawing' + ((num_left_pic + 7) % 8) + '.jpg';
+    mainImageName = 'Drawings/Drawing' + ((num_left_pic) % 8) + '.jpg';
+    rightImageName = 'Drawings/Drawing' + ((num_left_pic + 1) % 8) + '.jpg';
 
     const leftPhoto = document.getElementById('left-photo');
     const mainPhoto = document.getElementById('main-photo');
